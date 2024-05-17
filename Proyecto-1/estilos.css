@@ -1,0 +1,162 @@
+/* Estilos generales */
+.container {
+  width: 90%;
+  max-width: 1080px;
+  margin: 0 auto;
+  font-family: Arial, Georgia, serif;
+  font-size: 15px;
+}
+
+/* Encabezado */
+header {
+  text-align: center;
+  border: 1px solid #666;
+  background: #ccc;
+  padding: 10px;
+}
+
+/* Enlaces */
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+/* Sección principal y barra lateral */
+section, aside {
+  margin-top: 10px;
+  padding: 20px;
+  border-radius: 3px;
+}
+
+/* Sección principal */
+section {
+  float: left;
+  width: 70%;
+  background: #fafafa;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Barra lateral */
+aside {
+  float: right;
+  width: 25%;
+  background: #ccc;
+  color: #333;
+  box-sizing: border-box;
+}
+
+/* Navegación */
+nav {
+  background: #f06156;
+  margin-top: 10px;
+  padding: 1%;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul li {
+  margin: 0 5px;
+}
+
+nav ul li:hover {
+  background-color: #ccc;
+  text-decoration: underline;
+}
+
+nav ul li a {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  color: #75302a;
+  font-weight: bold;
+  padding: 6px 15px;
+  margin: 2px;
+  background: #fafafa;
+  border-radius: 3px;
+}
+
+/* Pie de página */
+footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background-color: #333;
+  padding: 10px 0;
+  text-align: center;
+}
+
+footer a {
+  color: #fff;
+}
+
+/* Encabezado 2 */
+h2 {
+  color: #f06156;
+}
+
+/* Media Queries */
+@media screen and (max-width: 980px) {
+  .container {
+    width: 98%;
+  }
+  section {
+    width: 68%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  aside,
+  section {
+    float: none;
+    width: 96%;
+    font-size: 1.2em;
+  }
+  nav,
+  section {
+    font-size: 1.2em;
+  }
+  aside {
+    margin-top: 10px;
+    background: #333;
+    color: #fff;
+  }
+  nav ul {
+    float: none;
+    clear: both;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  aside {
+    display: block;
+    background: #333;
+    color: #fff;
+    font-size: 1.5em;
+  }
+  nav,
+  section {
+    font-size: 1.5em;
+  }
+  section {
+    width: 94%;
+  }
+  nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: none;
+    width: 100%;
+  }
+  nav ul li {
+    float: none;
+    margin: 5px 0;
+  }
+}
